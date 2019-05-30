@@ -7,7 +7,7 @@ react component
 ## Usage
 
 ```jsx
-npm install --save cr-mindTree
+cnpm install --save cr-mindtree
 ```
 
 ## API
