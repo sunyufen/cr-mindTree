@@ -31,7 +31,7 @@ import 'cr-mindtree/assets/index.css'
 
 ## 注意
 如果使用了cssModule，作为样式的使用方式，在引入css时应特别注意
-以And Design Pro使用为例，在对应的页面less中引入css。注意报名前面的波浪线
+以And Design Pro使用为例，在对应的页面less中引入css。注意包名前面的波浪线
 ```less
 @import '~cr-mindtree/assets/index.css';
 ```
