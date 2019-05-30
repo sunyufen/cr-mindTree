@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import MindTree from 'cr-mindTree'
+import MindTree from 'cr-mindtree'
 import '../assets/index.less';
 
 const reactContainer = document.getElementById('__react-content');
