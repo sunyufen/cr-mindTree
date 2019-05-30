@@ -3,6 +3,8 @@
 
 react component
 
+## Example
+![example](./github/example.png =1000x858)
 
 ## Usage
 
@@ -10,8 +12,22 @@ react component
 cnpm install --save cr-mindtree
 ```
 
-## API
+```js
+import MindTree from 'cr-mindtree'
+import 'cr-mindtree/assets/index.css'
+// 注意在使用的时候不能忘记引入css
+```
 
+## API
+name | type | description
+-----|------|------------
+title|string|组件标题
+tree|array|传入组件树数据，类似[{name: 'leaf-one', value: '001'}, {name: 'leaf-two', value: '002'}]
+bgColor|string|组件背景颜色
+mode   |string|组件展开的方式（'bottomCenter', 'topRight', 'topLeft', 'topRight', 'bottomRight'）
+treeChange|func|组件展开收起 function(val) {}; 组件展开val为true,收起为false
+leafclick|func|点击组件叶子事件 function(event, val) {}; val为叶子数据
+treeBoxWidth|number|组件树叶子部分的宽度，一般不需要设置，默认值为300
 ## Development
 
 ```
@@ -21,16 +37,7 @@ npm start
 
 ## Example
 
-http://localhost:8001/examples/index.md
-
-
-
-## Test Case
-
-```
-npm test
-npm run chrome-test
-```
+http://localhost:8001/examples/testOne.html
 
 
 ## License
