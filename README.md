@@ -4,7 +4,7 @@
 react component
 
 ## Example
-![example](./github/example.png =1000x858)
+ <img src="./github/example.png" width = "1000" height = "858" alt="example" align=center />
 
 ## Usage
 
@@ -16,6 +16,17 @@ cnpm install --save cr-mindtree
 import MindTree from 'cr-mindtree'
 import 'cr-mindtree/assets/index.css'
 // 注意在使用的时候不能忘记引入css
+
+<MindTree title='分支机构' bgColor='#e4effc'
+  tree={[{
+    name: 'leaf-on0',
+    value: '001'
+  }, {
+    name: 'leaf-two',
+    value: '002'
+  }]}
+  mode='bottomCenter'
+/>
 ```
 
 ## API
