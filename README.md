@@ -4,7 +4,7 @@
 react component
 
 ## Example
- <img src="./github/example.png" width = "1000" alt="example" align=center />
+ <img src="./github/example1.png" alt="example" />
 
 ## Usage
 
