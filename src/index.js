@@ -152,14 +152,20 @@ class MindTree extends PureComponent {
             <div className={`${prefixCls}-tree-list`} key={index}>
               <span className={`${prefixCls}-tree-list-left`} style={{backgroundImage: index === 0 ? `url(${TreeLineTopFirst})` : 
                                                                      index === treeLast ? `url(${TreeLineTopLast})` : `url(${TreeLineTop2})`}}></span>
-              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '35px' }} onClick={e => this.handleLeafClick(e, item)}>{item.name}</span>
+              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '35px' }} onClick={e => this.handleLeafClick(e, item)}>
+                <span>{item.name}</span>
+                { item.accessory && (<span className={`${prefixCls}-tree-list-accessory`}>{item.accessory}</span>)}
+              </span>
             </div>
           )
         }
         if (mode === 'topLeft') {
           return (
             <div className={`${prefixCls}-tree-list`} key={index} style={{textAlign: 'right'}}>
-              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '35px' }} onClick={e => this.handleLeafClick(e, item)}>{item.name}</span>
+              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '35px' }} onClick={e => this.handleLeafClick(e, item)}>
+                <span>{item.name}</span>
+                { item.accessory && (<span className={`${prefixCls}-tree-list-accessory`}>{item.accessory}</span>)}
+              </span>
               <span className={`${prefixCls}-tree-list-left`} style={{backgroundImage: index === 0 ? `url(${TreeLineLeftTopFirst})` : 
                                                                      index === treeLast ? `url(${TreeLineTopLast})` : `url(${TreeLineTopLeft})`}}></span>
             </div>
@@ -168,7 +174,10 @@ class MindTree extends PureComponent {
         if (mode === 'bottomLeft') {
           return (
             <div className={`${prefixCls}-tree-list`} key={index} style={{textAlign: 'right'}}>
-              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '-13px' }} onClick={e => this.handleLeafClick(e, item)}>{item.name}</span>
+              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '-13px' }} onClick={e => this.handleLeafClick(e, item)}>
+                <span>{item.name}</span>
+                { item.accessory && (<span className={`${prefixCls}-tree-list-accessory`}>{item.accessory}</span>)}
+              </span>
               <span className={`${prefixCls}-tree-list-left`} style={{backgroundImage: index === 0 ? `url(${TreeLineDown1})` : 
                                                                      index === treeLast ? `url(${TreeLineLeftDownLast})` : `url(${TreeLineLeftDown})`}}></span>
             </div>
@@ -179,7 +188,10 @@ class MindTree extends PureComponent {
             <div className={`${prefixCls}-tree-list`} key={index}>
               <span className={`${prefixCls}-tree-list-left`} style={{backgroundImage: index === 0 ? `url(${TreeLineBottomCenter})` : 
                                                                      index === treeLast ? `url(${TreeLineBottomCenter})` : `url(${TreeLineBottomCenter})`}}></span>
-              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '35px' }} onClick={e => this.handleLeafClick(e, item)}>{item.name}</span>
+              <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '35px' }} onClick={e => this.handleLeafClick(e, item)}>
+                <span>{item.name}</span>
+                { item.accessory && (<span className={`${prefixCls}-tree-list-accessory`}>{item.accessory}</span>)}
+              </span>
             </div>
           )          
         }
@@ -187,7 +199,10 @@ class MindTree extends PureComponent {
           <div className={`${prefixCls}-tree-list`} key={index}>
             <span className={`${prefixCls}-tree-list-left`} style={{backgroundImage: index === 0 ? `url(${TreeLineDown1})` : 
                                                                    index === treeLast ? `url(${TreeLineDownLast})` : `url(${TreeLineDown2})`}}></span>
-            <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '-13px' }} onClick={e => this.handleLeafClick(e, item)}>{item.name}</span>
+            <span className={`${prefixCls}-tree-list-text`} style={{backgroundColor: bgColor, top: '-13px' }} onClick={e => this.handleLeafClick(e, item)}>
+                <span>{item.name}</span>
+                { item.accessory && (<span className={`${prefixCls}-tree-list-accessory`}>{item.accessory}</span>)}   
+            </span>
           </div>
         )
       })
