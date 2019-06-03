@@ -61,6 +61,7 @@ class MindTree extends PureComponent {
     this.state = {
       mode: props.mode,
       leafIsOpen: true,
+      tree: props.tree,
     }
   }
 
@@ -68,6 +69,14 @@ class MindTree extends PureComponent {
     const { bgColor, tree, treeBoxWidth, mode, prefixCls } = this.props
     const titleDom = document.querySelectorAll(`.${prefixCls}-title`)
     const treeBox = document.querySelectorAll(`.${prefixCls}-tree-box`)
+    if (mode === 'topRight' || mode === 'topLeft') {
+      const tree = this.state.tree.slice()
+      if (tree && Array.isArray(tree) ) {
+        this.setState({
+          tree: tree.reverse()
+        })
+      }
+    }
     const titleStyle = {
       ['cursor']: tree ? 'pointer' : 'default'
     }
@@ -134,20 +143,12 @@ class MindTree extends PureComponent {
   }
 
   render() {
-    const { mode, title, bgColor, tree, prefixCls } = this.props
+    const { mode, title, bgColor, prefixCls } = this.props
+    const tree = this.state.tree
     const treeLast = tree && tree.length > 0 && tree.length - 1
-    if (mode === 'topRight') {
-      tree.reverse()
-    }
     const list = tree && tree.length > 0 && (
       tree.map((item, index) => {
         if (mode === 'topRight') {
-          // const topRightClassName = classNames({
-          //   [`${prefixCls}-tree-list-left`]: true,
-          //   [`${prefixCls}-topRight`]: ( (index !== 0) && (index !== treeLast) ),
-          //   [`${prefixCls}-topRight-first`]: (index === 0),
-          //   [`${prefixCls}-topRight-last`]: (index === treeLast),
-          // })
           return (
             <div className={`${prefixCls}-tree-list`} key={index}>
               <span className={`${prefixCls}-tree-list-left`} style={{backgroundImage: index === 0 ? `url(${TreeLineTopFirst})` : 
