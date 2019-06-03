@@ -20,10 +20,12 @@ import 'cr-mindtree/assets/index.css'
 <MindTree title='分支机构' bgColor='#e4effc'
   tree={[{
     name: 'leaf-on0',
-    value: '001'
+    value: '001',
+    accessory: '75%',
   }, {
     name: 'leaf-two',
-    value: '002'
+    value: '002',
+    accessory: '25%',
   }]}
   mode='bottomCenter'
 />
