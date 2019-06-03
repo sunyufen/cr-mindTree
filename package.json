@@ -1,6 +1,6 @@
 {
   "name": "cr-mindtree",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a react component about leaf tree",
   "scripts": {
     "start": "rc-tools run server",
@@ -45,7 +45,8 @@
     "rc-animate": "2.x",
     "rc-trigger": "^2.3.0",
     "rc-util": "^4.1.0",
-    "resize-observer-polyfill": "^1.5.0"
+    "resize-observer-polyfill": "^1.5.0",
+    "velocity-animate": "^1.5.2"
   },
   "repository": {
     "type": "git",

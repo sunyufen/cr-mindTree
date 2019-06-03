@@ -50,13 +50,13 @@ treeBoxWidth|number|组件树叶子部分的宽度，一般不需要设置，默
 ## Development
 
 ```
-npm install
+cnpm install
 npm start
 ```
 
 ## Example
 
-http://localhost:8001/examples/testOne.html
+http://localhost:8019/examples/testOne.html
 
 
 ## License
