@@ -33,7 +33,8 @@ const TreeLineBottomCenter = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQA
 const alignConfig = {
   topRight: {
     points: ['bl', 'tr'],
-    offset: [ 0, 16],
+    offset: [ 0, 32],
+    // offset: [ 0, 16],
   },
   bottomRight: {
     points: ['tl', 'tr'],
@@ -41,7 +42,8 @@ const alignConfig = {
   },
   topLeft: {
     points: ['br', 'tl'],
-    offset: [ 0, 16],    
+    offset: [ 0, 32],    
+    // offset: [ 0, 16],    
   },
   bottomLeft: {
     points: ['tr', 'bl'],
@@ -103,32 +105,62 @@ class MindTree extends PureComponent {
     }
   }
   handleTreeChange = (event) => { 
-    const { treeChange, prefixCls } = this.props
+    const { treeChange, prefixCls, mode } = this.props
     const titleDom = event.currentTarget
     const leafDom = titleDom.nextElementSibling.querySelector(`.${prefixCls}-tree-box`)
-    if (this.state.leafIsOpen) {
-      velocity(leafDom, 'slideUp', {
-        duration: 300
-      })
-      this.setState({
-        leafIsOpen: !this.state.leafIsOpen
-      }, () => {
-        if (treeChange && typeof treeChange === 'function') {
-          treeChange(this.state.leafIsOpen)
-        }
-      })
+    const leafDomH = OuiDom.outerHeight(leafDom)
+    if (mode === 'topRight' || mode === 'topLeft') {
+      if (this.state.leafIsOpen) {
+        velocity(leafDom, {
+          marginTop: leafDomH + 'px',
+          opacity: 0,
+        }, {
+          duration: 400
+        })
+      } else {
+        velocity(leafDom, {
+          marginTop: '0px',
+          opacity: 1,
+        }, {
+          duration: 400
+        })      
+      }
     } else {
-      velocity(leafDom, 'slideDown', {
-        duration: 300
-      })
-      this.setState({
-        leafIsOpen: !this.state.leafIsOpen
-      }, () => {
-        if (treeChange && typeof treeChange === 'function') {
-          treeChange(this.state.leafIsOpen)
-        }       
-      })           
+      if (this.state.leafIsOpen) {
+        velocity(leafDom, {
+          marginTop: -leafDomH + 'px',
+          opacity: 0,
+        }, {
+          duration: 400
+        })
+      } else {
+        velocity(leafDom, {
+          marginTop: '0px',
+          opacity: 1,
+        }, {
+          duration: 400
+        })          
+      }
+
+      // if (this.state.leafIsOpen) {
+      //   velocity(leafDom, 'slideUp', {
+      //     duration: 300
+      //   })
+      // } else {
+      //   velocity(leafDom, 'slideDown', {
+      //     duration: 300
+      //   })          
+      // }
     }
+
+    this.setState({
+      leafIsOpen: !this.state.leafIsOpen
+    }, () => {
+      if (treeChange && typeof treeChange === 'function') {
+        treeChange(this.state.leafIsOpen)
+      }
+    })
+
   }
 
   handleLeafClick = (event, val) => {
@@ -223,7 +255,9 @@ class MindTree extends PureComponent {
           <span className={`${prefixCls}-title-text`}>{title}</span>
         </div>
         <div className={`${prefixCls}-tree`} ref={leafTree => this.leafTree = leafTree}>
-          <div className={`${prefixCls}-tree-box`} ref={leafBox => this.leafBox = leafBox}>
+          <div className={`${prefixCls}-tree-box`} style={{
+            top: (mode === 'bottomLeft' || mode === 'bottomRight') ? '0px' : '-13px',
+          }} ref={leafBox => this.leafBox = leafBox}>
             <div className={`${prefixCls}-tree-listBox`} style={{marginTop: mode === 'bottomCenter' ? '0' : '13px'}}>
               {list}
             </div>

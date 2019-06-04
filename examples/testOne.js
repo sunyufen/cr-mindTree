@@ -35,6 +35,12 @@ function render(container) {
           }, {
             name: '增加',
             value: 'zeng-jia'
+          }, {
+            name: '测试一',
+            value: 'ce-shi1'
+          }, {
+            name: '测试二',
+            value: 'ce-shi2'
           }]}
           mode='bottomCenter'
           treeChange={handleTreeChange}
@@ -66,7 +72,7 @@ function render(container) {
           leafClick={handleLeafClick}
         />
       </div>
-      <div style={{minHeight: '300px'}}>
+      <div style={{minHeight: '500px'}}>
       <h3>模式三：bottomRight</h3>
         <MindTree title='分支机构' bgColor='#e4effc'
           tree={[{
@@ -82,6 +88,9 @@ function render(container) {
           }, {
             name: '增加',
             value: 'zeng-jia'
+          }, {
+            name: '测试二',
+            value: 'ce-shi2'
           }]}
           mode='bottomRight'
           treeChange={handleTreeChange}

@@ -1,5 +1,4 @@
 # cr-mindTree
----
 
 react component
 
