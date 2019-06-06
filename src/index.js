@@ -182,6 +182,10 @@ class MindTree extends PureComponent {
       [className]: !!className,
       [prefixCls]: true,
     })
+    const leafClassName = classNames({
+      [`${prefixCls}-tree`]: true,
+      [`${prefixCls}-tree-none`]: !(!!tree),
+    })
     const list = tree && tree.length > 0 && (
       tree.map((item, index) => {
         if (mode === 'topRight') {
@@ -258,7 +262,8 @@ class MindTree extends PureComponent {
           }
           <span className={`${prefixCls}-title-text`}>{title}</span>
         </div>
-        <div className={`${prefixCls}-tree`} ref={leafTree => this.leafTree = leafTree}>
+        
+        <div className={leafClassName} ref={leafTree => this.leafTree = leafTree}>
           <div className={`${prefixCls}-tree-box`} style={{
             top: (mode === 'bottomLeft' || mode === 'bottomRight') ? '0px' : '-13px',
           }} ref={leafBox => this.leafBox = leafBox}>
