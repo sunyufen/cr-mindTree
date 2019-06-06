@@ -27,7 +27,7 @@ const TreeLineTopFirst = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABM
 const TreeLineTopLeft = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMAQMAAACh04BMAAAABlBMVEUAAAC0tLQrlfMqAAAAAXRSTlMAQObYZgAAABtJREFUOMtjgIAECDXKG+WN8kYs7z8YPMDGAwAg2il1WWvVOAAAAABJRU5ErkJggg=='
 const TreeLineLeftTopFirst = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMAQMAAACh04BMAAAABlBMVEUAAAC0tLQrlfMqAAAAAXRSTlMAQObYZgAAABZJREFUOMtjGAWjYBSMAhD4DwYPsPEA7dYNtYS4VE0AAAAASUVORK5CYII='
 const TreeLineLeftDown = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMAQMAAACh04BMAAAABlBMVEUAAAC0tLQrlfMqAAAAAXRSTlMAQObYZgAAABtJREFUOMtj+A8GDxggAMFDgIRR3ihvlDeyeQCPVil1Y8Z+KAAAAABJRU5ErkJggg=='
-const TreeLineLeftDownLast = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMAQMAAACh04BMAAAABlBMVEX///+0tLTbMJmbAAAAGUlEQVQ4y2P4DwYHGMAAzhsFo2AUjAI4AABe/w11M4MFiwAAAABJRU5ErkJggg=='
+const TreeLineLeftDownLast = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMAQMAAACh04BMAAAABlBMVEUAAAC0tLQrlfMqAAAAAXRSTlMAQObYZgAAABlJREFUOMtj+A8GBxjAAM4bBaNgFIwCOAAAXv8NdTODBYsAAAAASUVORK5CYII='
 const TreeLineBottomCenter = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABMAQMAAACh04BMAAAABlBMVEUAAAC0tLQrlfMqAAAAAXRSTlMAQObYZgAAABxJREFUOMtjgIAECDXKG+WN8kY4r/4/CHxA5QEAwZMolaw8DaEAAAAASUVORK5CYII='
 
 const alignConfig = {
@@ -141,16 +141,6 @@ class MindTree extends PureComponent {
           duration: 400
         })          
       }
-
-      // if (this.state.leafIsOpen) {
-      //   velocity(leafDom, 'slideUp', {
-      //     duration: 300
-      //   })
-      // } else {
-      //   velocity(leafDom, 'slideDown', {
-      //     duration: 300
-      //   })          
-      // }
     }
 
     this.setState({
