@@ -1,6 +1,6 @@
 {
   "name": "cr-mindtree",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a react component about leaf tree",
   "scripts": {
     "start": "rc-tools run server",

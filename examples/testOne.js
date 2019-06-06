@@ -16,13 +16,14 @@ function handleLeafClick(e, value) {
   console.log(value)
 }
 
+
 function render(container) {
   ReactDOM.render(
     <div>
       <h3>MINDTREE TEST</h3>
       <div>
       <h3>无枝叶模式</h3>
-      <MindTree className={'treeTitle'} bgColor='#6eabec' title='南京云帐房网络科技有限公司' />
+      <MindTree className={"treeTitle"} bgColor='#6eabec' title='南京云帐房网络科技有限公司' />
       </div>
       <div style={{minHeight: '300px'}}>
       <h3>模式一：bottomCenter</h3>

@@ -178,6 +178,10 @@ class MindTree extends PureComponent {
     const { mode, title, bgColor, prefixCls, className } = this.props
     const tree = this.state.tree
     const treeLast = tree && tree.length > 0 && tree.length - 1
+    const mindTreeClassName = classNames({
+      [className]: !!className,
+      [prefixCls]: true,
+    })
     const list = tree && tree.length > 0 && (
       tree.map((item, index) => {
         if (mode === 'topRight') {
@@ -241,7 +245,7 @@ class MindTree extends PureComponent {
       })
     )
     return (
-      <div className={`${prefixCls} ${className}`}>
+      <div className={mindTreeClassName}>
         <div className={`${prefixCls}-title`} style={{backgroundColor: bgColor}} onClick={this.handleTreeChange} ref={titleDom => this.titleDom = titleDom}>
           {
             tree && (tree.length > 0) && (
