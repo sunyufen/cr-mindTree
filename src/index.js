@@ -175,7 +175,7 @@ class MindTree extends PureComponent {
   }
 
   render() {
-    const { mode, title, bgColor, prefixCls } = this.props
+    const { mode, title, bgColor, prefixCls, className } = this.props
     const tree = this.state.tree
     const treeLast = tree && tree.length > 0 && tree.length - 1
     const list = tree && tree.length > 0 && (
@@ -241,7 +241,7 @@ class MindTree extends PureComponent {
       })
     )
     return (
-      <div className={`${prefixCls}`}>
+      <div className={`${prefixCls} ${className}`}>
         <div className={`${prefixCls}-title`} style={{backgroundColor: bgColor}} onClick={this.handleTreeChange} ref={titleDom => this.titleDom = titleDom}>
           {
             tree && (tree.length > 0) && (
@@ -277,6 +277,7 @@ MindTree.propTypes = {
   treeBoxWidth: PropTypes.number,
   leafClick: PropTypes.func,
   prefixCls: PropTypes.string,
+  className: PropTypes.string,
 }
 
 MindTree.defaultProps = {
