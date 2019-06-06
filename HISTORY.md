@@ -16,4 +16,8 @@ cr-mindTree is start
 
 ## 1.0.6 / 2019-06-06
 修复className 不传值为 undefined 问题和 className 无法使用 cssModule 模式的问题
+修复tree参数不传值时有默认Dom问题
+
+## 1.0.7
+去掉枝叶默认白色背景问题，以及优化枝叶线图片
 
