@@ -32,21 +32,8 @@ function render(container) {
             name: '刘丹',
             value: 'liu-dan'
           }, {
-            name: '韩少云',
-            value: 'han-shao-yun',
-            accessory: '75%',
-          }, {
-            name: '赵四',
-            value: 'zhao-si'
-          }, {
-            name: '增加',
-            value: 'zeng-jia'
-          }, {
-            name: '测试一',
-            value: 'ce-shi1'
-          }, {
-            name: '测试二',
-            value: 'ce-shi2'
+            name: 'hello',
+            value: 'hello',        
           }]}
           mode='bottomCenter'
           treeChange={handleTreeChange}
@@ -61,17 +48,9 @@ function render(container) {
             value: 'liu-dan',
             accessory: '12%',
           }, {
-            name: '韩少云',
-            value: 'han-shao-yun',
-            accessory: '10%',
-          }, {
-            name: '赵四',
-            value: 'zhao-si',
-            accessory: '58%',
-          }, {
-            name: '增加',
-            value: 'zeng-jia',
-            accessory: '20%',
+            name: '李易峰',
+            value: 'li-yi-feng',
+            accessory: '88%',           
           }]}
           mode='topRight'
           treeChange={handleTreeChange}
@@ -86,17 +65,9 @@ function render(container) {
             value: 'liu-dan',
             accessory: '95%',
           }, {
-            name: '韩少云',
-            value: 'han-shao-yun'
-          }, {
-            name: '赵四',
-            value: 'zhao-si'
-          }, {
-            name: '增加',
-            value: 'zeng-jia'
-          }, {
-            name: '测试二',
-            value: 'ce-shi2'
+            name: '李易峰',
+            value: 'li-yi-feng',
+            accessory: '88%',           
           }]}
           mode='bottomRight'
           treeChange={handleTreeChange}
@@ -111,17 +82,9 @@ function render(container) {
             value: 'liu-dan',
             accessory: '20%',
           }, {
-            name: '韩少云',
-            value: 'han-shao-yun',
-            accessory: '20%',
-          }, {
-            name: '赵四',
-            value: 'zhao-si',
-            accessory: '20%',
-          }, {
-            name: '增加',
-            value: 'zeng-jia',
-            accessory: '20%',
+            name: '李易峰',
+            value: 'li-yi-feng',
+            accessory: '88%',           
           }]}
           mode='topLeft'
           treeChange={handleTreeChange}
@@ -136,17 +99,9 @@ function render(container) {
             value: 'liu-dan',
             accessory: '董事',
           }, {
-            name: '韩少云',
-            value: 'han-shao-yun',
-            accessory: '监事',
-          }, {
-            name: '赵四',
-            value: 'zhao-si',
-            accessory: '董事',
-          }, {
-            name: '增加',
-            value: 'zeng-jia',
-            accessory: '董事长',
+            name: '李易峰',
+            value: 'li-yi-feng',
+            accessory: '88%',           
           }]}
           mode='bottomLeft'
           treeChange={handleTreeChange}
