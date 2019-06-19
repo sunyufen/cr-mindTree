@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
-import MindTree from 'cr-mindtree'
+import MindTree from '../index'
 import '../assets/index.less'
 import '../assets/example.less'
+
 
 const reactContainer = document.getElementById('__react-content');
 const bodyContainer = document.getElementsByTagName('body')
@@ -15,7 +16,6 @@ function handleTreeChange(val) {
 function handleLeafClick(e, value) {
   console.log(value)
 }
-
 
 function render(container) {
   ReactDOM.render(

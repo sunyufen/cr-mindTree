@@ -1,13 +1,16 @@
 {
   "name": "cr-mindtree",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a react component about leaf tree",
   "scripts": {
     "start": "rc-tools run server",
     "build": "rc-tools run build",
     "lint": "rc-tools run lint",
     "compile": "rc-tools run compile --babel-runtime",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "rc-tools run test",
+    "gh-pages": "rc-tools run gh-pages",
+    "pub": "rc-tools run update-self && rc-tools run pub",
+    "prepublish": "rc-tools run guard"
   },
   "author": "feasin",
   "config": {
@@ -21,17 +24,17 @@
   "main": "./lib/index",
   "module": "./es/index",
   "devDependencies": {
-    "coveralls": "^3.0.2",
+    "coveralls": "^2.11.15",
     "enzyme": "^3.0.0",
-    "enzyme-adapter-react-16": "^1.0.2",
-    "enzyme-to-json": "^3.0.1",
-    "jest": "^21.0.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "enzyme-to-json": "^3.0.0",
+    "expect.js": "^0.3.1",
+    "lint-staged": "^8.1.0",
     "pre-commit": "1.x",
-    "rc-tools": "7.x",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-test-renderer": "^16.8.0",
-    "rmc-tools": "^0.0.4"
+    "rc-tools": "^9.3.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0"
   },
   "dependencies": {
     "antd": "^3.19.1",
