@@ -58,6 +58,11 @@ npm start
 
 http://localhost:8019/examples/testOne.html
 
+## Test
+```js
+npm test
+```
+
 
 ## License
 
