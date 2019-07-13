@@ -42,19 +42,20 @@ function render(container) {
       </div>
       <div style={{minHeight: '300px', marginLeft: '300px'}}>
       <h3 style={{marginLeft: '-100px'}}>模式二：topRight</h3>
-        <MindTree title='分支机构' bgColor='#e4effc'
+        <MindTree title='分支机构' bgColor='#e4effc' 
           tree={[{
             name: '刘丹000',
             value: 'liu-dan',
             accessory: '12%',
           }, {
-            name: '李易峰',
+            name: '李易峰测试文本长度如果很长会有问题呢',
             value: 'li-yi-feng',
-            accessory: '88%',           
+            accessory: '88%',          
           }]}
           mode='topRight'
           treeChange={handleTreeChange}
           leafClick={handleLeafClick}
+          treeBoxWidth={200}
         />
       </div>
       <div style={{minHeight: '500px'}}>
@@ -82,7 +83,7 @@ function render(container) {
             value: 'liu-dan',
             accessory: '20%',
           }, {
-            name: '李易峰',
+            name: '李易峰454666',
             value: 'li-yi-feng',
             accessory: '88%',           
           }]}
