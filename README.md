@@ -47,6 +47,7 @@ treeChange|func|组件展开收起 function(val) {}; 组件展开val为true,收�
 leafClick|func|点击组件叶子事件 function(event, val) {}; val为叶子数据
 treeBoxWidth|number|组件树叶子部分的宽度，一般不需要设置，默认值为300
 className|string|为组建增加className
+hoverBgColor|string|组件枝叶及标题hover背景颜色
 ## Development
 
 ```

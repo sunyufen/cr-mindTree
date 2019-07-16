@@ -77,7 +77,7 @@ function render(container) {
       </div>   
       <div style={{minHeight: '300px', marginLeft: '300px'}}>
       <h3>模式四：topLeft</h3>
-        <MindTree title='分支机构' bgColor='#e4effc'
+        <MindTree title='分支机构' bgColor='red'
           tree={[{
             name: '刘丹',
             value: 'liu-dan',
@@ -90,6 +90,7 @@ function render(container) {
           mode='topLeft'
           treeChange={handleTreeChange}
           leafClick={handleLeafClick}
+          hoverBgColor='green'
         />
       </div>   
       <div style={{minHeight: '300px', marginLeft: '300px'}}>
