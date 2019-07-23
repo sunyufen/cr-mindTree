@@ -239,7 +239,7 @@ class MindTree extends PureComponent {
                  onMouseLeave={this.onMouseLeave}
                 >
                   <span 
-                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                     style={nameStyle}
                     title={item.name}
                   >{item.name}</span>
@@ -258,7 +258,7 @@ class MindTree extends PureComponent {
                 onMouseLeave={this.onMouseLeave}
               >
                 <span 
-                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                   style={nameStyle}
                   title={item.name}
                 >{item.name}</span>
@@ -277,7 +277,7 @@ class MindTree extends PureComponent {
                   onMouseLeave={this.onMouseLeave}                  
                 >
                   <span 
-                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                     style={nameStyle}
                     title={item.name}
                   >{item.name}</span>
@@ -295,7 +295,7 @@ class MindTree extends PureComponent {
                 onMouseLeave={this.onMouseLeave}                
               >
                 <span 
-                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                   style={nameStyle}
                   title={item.name}
                 >{item.name}</span>
@@ -316,7 +316,7 @@ class MindTree extends PureComponent {
                   onMouseLeave={this.onMouseLeave}                  
                 >
                   <span 
-                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                     style={nameStyle}
                     title={item.name}
                   >{item.name}</span>
@@ -334,7 +334,7 @@ class MindTree extends PureComponent {
                 onMouseLeave={this.onMouseLeave}                
               >
                 <span 
-                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                   style={nameStyle}
                   title={item.name}
                 >{item.name}</span>
@@ -356,7 +356,7 @@ class MindTree extends PureComponent {
                 onMouseLeave={this.onMouseLeave}                
               >
                 <span 
-                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                  className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                   style={nameStyle}
                   title={item.name}
                 >{item.name}</span>
@@ -376,7 +376,7 @@ class MindTree extends PureComponent {
                   onMouseLeave={this.onMouseLeave}                  
                 >
                     <span 
-                      className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                      className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                       style={nameStyle}
                       title={item.name}
                     >{item.name}</span>
@@ -395,7 +395,7 @@ class MindTree extends PureComponent {
                 onMouseLeave={this.onMouseLeave}                
               >
                   <span 
-                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory})}
+                    className={classNames({[`${prefixCls}-tree-list-addText`]: item.accessory, [`${prefixCls}-tree-list-addTextOther`]: !item.accessory})}
                     style={nameStyle}
                     title={item.name}
                   >{item.name}</span>

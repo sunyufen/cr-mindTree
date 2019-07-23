@@ -68,7 +68,6 @@
         // width: ~'calc(100% - 50px)';
         max-width: ~'calc(100% - 50px)';
         white-space: nowrap;
-
       }
       &-addText {
         display: inline-block;
@@ -77,6 +76,12 @@
         // max-width: 200px;
         .textOverflow();
         vertical-align: top;
+      }
+      &-addTextOther {
+        display: inline-block;
+        max-width: 100%;
+        .textOverflow();
+        vertical-align: top;        
       }
       &-accessory {
         display: inline-block;

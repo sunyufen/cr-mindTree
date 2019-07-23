@@ -55,7 +55,7 @@ function render(container) {
           mode='topRight'
           treeChange={handleTreeChange}
           leafClick={handleLeafClick}
-          treeBoxWidth={200}
+          treeBoxWidth={300}
         />
       </div>
       <div style={{minHeight: '500px'}}>
@@ -64,11 +64,9 @@ function render(container) {
           tree={[{
             name: '刘丹',
             value: 'liu-dan',
-            accessory: '95%',
           }, {
-            name: '李易峰',
-            value: 'li-yi-feng',
-            accessory: '88%',           
+            name: '李易峰测试是文本长达李易峰测试是文本长达',
+            value: 'li-yi-feng',          
           }]}
           mode='bottomRight'
           treeChange={handleTreeChange}
