@@ -7,6 +7,8 @@
     "build": "rc-tools run build",
     "lint": "rc-tools run lint",
     "compile": "rc-tools run compile --babel-runtime",
+    "pub": "npm run test && npm run build && npm run compile && zf-tools run pub",
+    "prepublish": "zf-tools run guard",
     "test": "rc-tools run test"
   },
   "author": "feasin",
@@ -31,7 +33,8 @@
     "rc-tools": "^9.3.4",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-test-renderer": "^16.0.0"
+    "react-test-renderer": "^16.0.0",
+    "zf-tools": "^1.0.1"
   },
   "dependencies": {
     "antd": "^3.19.1",
