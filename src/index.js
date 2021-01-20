@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import OuiDom from './utils/ouiDomUtils'
-import { Icon } from 'antd'
+import { MinusCircleOutlined, PlusCircleOutlined } from '@ant-design/icons';
 import velocity from 'velocity-animate'
 import domAlign from 'dom-align'
 import classNames from 'classnames'
@@ -435,7 +435,7 @@ class MindTree extends PureComponent {
             tree && (tree.length > 0) && (
             <span className={`${prefixCls}-title-decoration`}>
               {
-                this.state.leafIsOpen ? (<Icon type="minus-circle" />) : (<Icon type="plus-circle" />)
+                this.state.leafIsOpen ? (<MinusCircleOutlined />) : (<PlusCircleOutlined />)
               }
             </span>
             )
@@ -459,7 +459,7 @@ class MindTree extends PureComponent {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
